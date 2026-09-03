@@ -2,7 +2,7 @@
    MENÚ DE NAVEGACIÓN
 ========================= */
 
-const API_BASE_URL = "PEGAR_URL_DE_RENDER_AQUI";
+const API_BASE_URL = "https://quincho-paraiso-backend.onrender.com";
 
 const botonMenu = document.querySelector(".header__menu");
 const menuPrincipal = document.getElementById("menu-principal");
