@@ -1,0 +1,1072 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Alquiler de quinchos para eventos, asados y reuniones con familia y amigos."
+    />
+
+    <title>Quincho Paraíso | Alquiler de quinchos</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__contenido">
+        <a class="header__logo" href="#"> Quincho Paraíso </a>
+
+        <button
+          class="header__menu"
+          type="button"
+          aria-label="Abrir menú de navegación"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <svg
+            class="header__menu-icono"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            aria-hidden="true"
+          >
+            <path
+              d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+            />
+          </svg>
+        </button>
+
+        <nav
+          class="header__nav"
+          id="menu-principal"
+          aria-label="Navegación principal"
+        >
+          <ul class="header__lista">
+            <li>
+              <a class="header__enlace" href="#"> Inicio </a>
+            </li>
+
+            <li>
+              <a class="header__enlace" href="#quinchos"> Quinchos </a>
+            </li>
+
+            <li>
+              <a class="header__enlace" href="#reservar"> Reservas </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__contenedor">
+          <h1 class="hero__titulo">Reserva tu quincho ideal</h1>
+
+          <p class="hero__subtitulo">
+            Espacios únicos para asados inolvidables con familia y amigos
+          </p>
+
+          <div class="hero__acciones">
+            <a href="#quinchos" class="boton boton--primario">
+              Ver Quinchos Disponibles
+            </a>
+
+            <a href="#reservar" class="boton boton--secundario">
+              Consultar Disponibilidad
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quinchos -->
+      <section class="quinchos" id="quinchos">
+        <header class="quinchos__encabezado">
+          <p class="quinchos__etiqueta">Nuestros espacios</p>
+
+          <h2 class="quinchos__titulo">Elegí el quincho perfecto</h2>
+
+          <p class="quinchos__descripcion">
+            Cada espacio está preparado para que solo te preocupes por
+            disfrutar. Conocé los detalles y reservá el que mejor se adapte a tu
+            evento.
+          </p>
+        </header>
+        <div class="quinchos__lista">
+          <article class="quincho">
+            <div class="quincho__media">
+              <img
+                class="quincho__imagen"
+                src="assets/img/quincho-el-sauce.jpg"
+                alt="Pileta y jardín del Quincho El Sauce"
+              />
+
+              <p class="quincho__precio">$123.456 ARS</p>
+            </div>
+
+            <div class="quincho__contenido">
+              <h3 class="quincho__titulo">Quincho El Sauce</h3>
+
+              <p class="quincho__descripcion">
+                Espacio íntimo y acogedor con pileta y jardín de sauces,
+                perfecto para reuniones familiares.
+              </p>
+
+              <div class="quincho__caracteristicas">
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/grupo.svg"
+                    alt=""
+                  />
+
+                  40 personas
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/pileta.svg"
+                    alt=""
+                  />
+
+                  Pileta
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/auto.svg"
+                    alt=""
+                  />
+
+                  Estacionamiento
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/casa.svg"
+                    alt=""
+                  />
+
+                  Cubierto
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/fuego.svg"
+                    alt=""
+                  />
+
+                  Parrilla
+                </span>
+              </div>
+
+              <button
+                class="boton boton--detalles"
+                type="button"
+                data-dialog="dialog-sauce"
+              >
+                Ver más detalles
+              </button>
+            </div>
+          </article>
+
+          <dialog class="detalles" id="dialog-sauce">
+            <div class="detalles__contenido">
+              <button
+                class="detalles__cerrar"
+                type="button"
+                aria-label="Cerrar detalles"
+              >
+                &times;
+              </button>
+
+              <img
+                class="detalles__imagen"
+                src="assets/img/quincho-el-sauce.jpg"
+                alt="Pileta y jardín del Quincho El Sauce"
+              />
+
+              <div class="detalles__informacion">
+                <h2 class="detalles__titulo">Quincho El Sauce</h2>
+
+                <p>
+                  El Quincho El Sauce ofrece un ambiente más reservado e íntimo,
+                  ideal para reuniones familiares y celebraciones de tamaño
+                  medio.
+                </p>
+
+                <p>
+                  Cuenta con una parrilla de ladrillo, una pileta rectangular
+                  rodeada de camastros y un hermoso jardín con sauces que crean
+                  un entorno fresco y natural.
+                </p>
+
+                <p>
+                  Excelente opción para cumpleaños, aniversarios y encuentros de
+                  amigos.
+                </p>
+              </div>
+
+              <div class="detalles__comodidades">
+                <h3 class="detalles__subtitulo">Comodidades</h3>
+
+                <ul class="detalles__lista">
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/grupo.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Capacidad </span>
+
+                      <span class="detalles__item-valor"> 40 personas </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/pileta.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Pileta </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/auto.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo">
+                        Estacionamiento
+                      </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/casa.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Zona cubierta </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/fuego.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Parrilla </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/bano.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Baños </span>
+
+                      <span class="detalles__item-valor"> 2 </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/electricidad.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo">
+                        Luz y electricidad
+                      </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/sillas.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo">
+                        Mesas y sillas
+                      </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </dialog>
+
+          <article class="quincho">
+            <div class="quincho__media">
+              <img
+                class="quincho__imagen"
+                src="assets/img/quincho-las-acacias.jpg"
+                alt="Pileta y jardín del Quincho Las Acacias"
+              />
+
+              <p class="quincho__precio">$123.456 ARS</p>
+            </div>
+
+            <div class="quincho__contenido">
+              <h3 class="quincho__titulo">Quincho Las Acacias</h3>
+
+              <p class="quincho__descripcion">
+                Espacio amplio y luminoso con pileta y jardín de acacias, ideal
+                para reuniones al aire libre.
+              </p>
+
+              <div class="quincho__caracteristicas">
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/grupo.svg"
+                    alt=""
+                  />
+
+                  60 personas
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/pileta.svg"
+                    alt=""
+                  />
+
+                  Pileta
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/auto.svg"
+                    alt=""
+                  />
+
+                  Estacionamiento
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/casa.svg"
+                    alt=""
+                  />
+
+                  Cubierto
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/fuego.svg"
+                    alt=""
+                  />
+
+                  Parrilla
+                </span>
+              </div>
+
+              <button
+                class="boton boton--detalles"
+                type="button"
+                data-dialog="dialog-acacias"
+              >
+                Ver más detalles
+              </button>
+            </div>
+          </article>
+
+          <dialog class="detalles" id="dialog-acacias">
+            <div class="detalles__contenido">
+              <button
+                class="detalles__cerrar"
+                type="button"
+                aria-label="Cerrar detalles"
+              >
+                &times;
+              </button>
+
+              <img
+                class="detalles__imagen"
+                src="assets/img/quincho-las-acacias.jpg"
+                alt="Pileta y jardín del Quincho Las Acacias"
+              />
+
+              <div class="detalles__informacion">
+                <h2 class="detalles__titulo">Quincho Las Acacias</h2>
+
+                <p>
+                  El Quincho Las Acacias combina amplitud y confort en un
+                  entorno natural.
+                </p>
+
+                <p>
+                  Dispone de una parrilla de ladrillo de buen tamaño, una pileta
+                  en forma de riñón rodeada de césped y un jardín con acacias
+                  que ofrecen sombra ligera y un ambiente fresco.
+                </p>
+
+                <p>
+                  Ideal para reuniones familiares, cumpleaños y eventos sociales
+                  de hasta 60 personas.
+                </p>
+              </div>
+
+              <div class="detalles__comodidades">
+                <h3 class="detalles__subtitulo">Comodidades</h3>
+
+                <ul class="detalles__lista">
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/grupo.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Capacidad </span>
+
+                      <span class="detalles__item-valor"> 60 personas </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/pileta.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Pileta </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/auto.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo">
+                        Estacionamiento
+                      </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/casa.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Zona cubierta </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/fuego.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Parrilla </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/bano.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Baños </span>
+
+                      <span class="detalles__item-valor"> 2 </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/electricidad.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo">
+                        Luz y electricidad
+                      </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/sillas.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo">
+                        Mesas y sillas
+                      </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </dialog>
+
+          <article class="quincho">
+            <div class="quincho__media">
+              <img
+                class="quincho__imagen"
+                src="assets/img/quincho-el-ombu.jpg"
+                alt="Pileta y jardín del Quincho El Ombú"
+              />
+
+              <p class="quincho__precio">$123.456 ARS</p>
+            </div>
+
+            <div class="quincho__contenido">
+              <h3 class="quincho__titulo">Quincho El Ombú</h3>
+
+              <p class="quincho__descripcion">
+                Espacio tradicional con pileta y sombra de ombúes, ideal para
+                reuniones familiares y asados clásicos.
+              </p>
+
+              <div class="quincho__caracteristicas">
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/grupo.svg"
+                    alt=""
+                  />
+
+                  50 personas
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/pileta.svg"
+                    alt=""
+                  />
+
+                  Pileta
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/auto.svg"
+                    alt=""
+                  />
+
+                  Estacionamiento
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/casa.svg"
+                    alt=""
+                  />
+
+                  Cubierto
+                </span>
+
+                <span class="etiqueta">
+                  <img
+                    class="etiqueta__icono"
+                    src="assets/icons/fuego.svg"
+                    alt=""
+                  />
+
+                  Parrilla
+                </span>
+              </div>
+
+              <button
+                class="boton boton--detalles"
+                type="button"
+                data-dialog="dialog-ombu"
+              >
+                Ver más detalles
+              </button>
+            </div>
+          </article>
+
+          <dialog class="detalles" id="dialog-ombu">
+            <div class="detalles__contenido">
+              <button
+                class="detalles__cerrar"
+                type="button"
+                aria-label="Cerrar detalles"
+              >
+                &times;
+              </button>
+
+              <img
+                class="detalles__imagen"
+                src="assets/img/quincho-el-ombu.jpg"
+                alt="Pileta y jardín del Quincho El Ombú"
+              />
+
+              <div class="detalles__informacion">
+                <h2 class="detalles__titulo">Quincho El Ombú</h2>
+
+                <p>
+                  El Quincho El Ombú es un espacio de estilo clásico argentino,
+                  rodeado de grandes ombúes que brindan una sombra generosa y un
+                  ambiente fresco.
+                </p>
+
+                <p>
+                  Cuenta con una parrilla de ladrillo amplia, una pileta
+                  rectangular y un jardín amplio perfecto para juegos y
+                  descanso.
+                </p>
+
+                <p>
+                  Ideal para reuniones familiares, asados de fin de semana y
+                  celebraciones íntimas.
+                </p>
+              </div>
+
+              <div class="detalles__comodidades">
+                <h3 class="detalles__subtitulo">Comodidades</h3>
+
+                <ul class="detalles__lista">
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/grupo.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Capacidad </span>
+
+                      <span class="detalles__item-valor"> 50 personas </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/pileta.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Pileta </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/auto.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo">
+                        Estacionamiento
+                      </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/casa.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Zona cubierta </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/fuego.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Parrilla </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/bano.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo"> Baños </span>
+
+                      <span class="detalles__item-valor"> 2 </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/electricidad.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo">
+                        Luz y electricidad
+                      </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+
+                  <li class="detalles__item">
+                    <img
+                      class="detalles__icono"
+                      src="assets/icons/sillas.svg"
+                      alt=""
+                    />
+
+                    <div>
+                      <span class="detalles__item-titulo">
+                        Mesas y sillas
+                      </span>
+
+                      <span class="detalles__item-valor"> Sí </span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </section>
+      <!-- Reservas -->
+      <section class="reservas" id="reservar">
+        <div class="reservas__contenido">
+          <div class="reservas__informacion">
+            <header class="reservas__encabezado">
+              <p class="reservas__etiqueta">Reservas</p>
+
+              <h2 class="reservas__titulo">¿Querés reservar?</h2>
+
+              <p class="reservas__descripcion">
+                Completá el formulario y te contactamos a la brevedad, o
+                escribinos directamente por WhatsApp para recibir una respuesta
+                más rápida.
+              </p>
+            </header>
+
+            <div class="reservas__contactos">
+              <a
+                class="contacto"
+                href="https://wa.me/549123456789"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  class="contacto__icono"
+                  src="assets/icons/chat.svg"
+                  alt=""
+                />
+
+                <div class="contacto__info">
+                  <span class="contacto__titulo"> WhatsApp </span>
+
+                  <span class="contacto__valor"> +54 9 1234 567890 </span>
+                </div>
+              </a>
+
+              <a class="contacto" href="tel:+549123456789">
+                <img
+                  class="contacto__icono"
+                  src="assets/icons/telefono.svg"
+                  alt=""
+                />
+
+                <div class="contacto__info">
+                  <span class="contacto__titulo"> Teléfono </span>
+
+                  <span class="contacto__valor"> +54 9 1234 567890 </span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <form class="formulario" id="formulario-reserva">
+            <div class="formulario__campos">
+              <div class="formulario__grupo">
+                <label for="nombre"> Nombre </label>
+
+                <input
+                  class="formulario__campo"
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Tu nombre"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="formulario__grupo">
+                <label for="telefono"> Teléfono / WhatsApp </label>
+
+                <input
+                  class="formulario__campo"
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  placeholder="Ej: 387 123 4567"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  required
+                />
+              </div>
+
+              <div class="formulario__grupo">
+                <label for="email"> Email </label>
+
+                <input
+                  class="formulario__campo"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="tu@email.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <div class="formulario__grupo">
+                <label for="fecha"> Fecha del evento </label>
+
+                <input
+                  class="formulario__campo"
+                  type="date"
+                  id="fecha"
+                  name="fecha"
+                  required
+                />
+              </div>
+
+              <div class="formulario__grupo">
+                <label for="cantidad"> Cantidad de personas </label>
+
+                <input
+                  class="formulario__campo"
+                  type="number"
+                  id="cantidad"
+                  name="cantidad"
+                  min="1"
+                  step="1"
+                  placeholder="Ej: 40"
+                  required
+                />
+              </div>
+
+              <div class="formulario__grupo">
+                <label for="quincho"> Quincho de interés </label>
+
+                <select
+                  class="formulario__campo"
+                  id="quincho"
+                  name="quincho"
+                  required
+                >
+                  <option value="" disabled selected>
+                    Seleccioná un quincho
+                  </option>
+
+                  <option value="sauce" data-capacidad="40">
+                    Quincho El Sauce
+                  </option>
+
+                  <option value="acacias" data-capacidad="60">
+                    Quincho Las Acacias
+                  </option>
+
+                  <option value="ombu" data-capacidad="50">
+                    Quincho El Ombú
+                  </option>
+                </select>
+              </div>
+
+              <div class="formulario__grupo formulario__grupo--completo">
+                <label for="mensaje"> Mensaje </label>
+
+                <textarea
+                  class="formulario__campo formulario__campo--mensaje"
+                  id="mensaje"
+                  name="mensaje"
+                  rows="5"
+                  placeholder="Contanos un poco sobre tu evento..."
+                ></textarea>
+              </div>
+            </div>
+            <p
+              class="formulario__estado"
+              id="formulario-estado"
+              aria-live="polite"
+            ></p>
+
+            <button class="boton boton--enviar" type="submit">
+              Enviar consulta
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="footer__contenido">
+        <div class="footer__marca">
+          <a class="footer__logo" href="#"> Quincho Paraíso </a>
+
+          <p class="footer__descripcion">
+            Espacios al aire libre para eventos, asados y reuniones. Reserva tu
+            quincho ideal y disfruta con quienes mas queres.
+          </p>
+        </div>
+
+        <nav
+          class="footer__navegacion"
+          aria-label="Navegación del pie de página"
+        >
+          <h2 class="footer__titulo-seccion">Navegación</h2>
+          <ul class="footer__lista">
+            <li>
+              <a class="footer__enlace" href="#"> Inicio </a>
+            </li>
+
+            <li>
+              <a class="footer__enlace" href="#quinchos"> Quinchos </a>
+            </li>
+
+            <li>
+              <a class="footer__enlace" href="#reservar"> Reservas </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__contacto">
+          <h2 class="footer__titulo-seccion">Contacto</h2>
+
+          <a class="footer__enlace" href="tel:+549123456789">
+            +54 9 1234 567890
+          </a>
+
+          <a
+            class="footer__enlace"
+            href="https://wa.me/549123456789"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp
+          </a>
+
+          <a class="footer__enlace" href="mailto:reservas@quinchoparaiso.com">
+            reservas@quinchoparaiso.com
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__inferior">
+        <p>
+          &copy;
+          <span id="anio-actual"></span>
+          Quincho Paraíso. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

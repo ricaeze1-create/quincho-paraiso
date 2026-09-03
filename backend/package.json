@@ -1,0 +1,20 @@
+{
+  "name": "proyecto---copia",
+  "version": "1.0.0",
+  "description": "Backend para enviar reservas por WhatsApp Cloud API.",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node Server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20 <25"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
